@@ -100,7 +100,7 @@ export default function About() {
                         Cabourg, Etretat, I can guide you there and show you all
                         the little secret part of all the whole Normandy.
                       </p>
-                      <p className="mb-4 text-lg leading-relaxed text-blueGray-700">
+                      <p className="mb-4 italic text-lg leading-relaxed text-blueGray-700">
                         Number of guide card : GC-2018-14-008D
                       </p>
                       <h1 className="mb-4 text-xl leading-relaxed font-bold text-orange-500">
