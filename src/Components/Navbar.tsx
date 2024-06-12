@@ -11,9 +11,9 @@ export default function Navbar() {
       <div className="hidden md:block">
         <ul className="flex items-center space-x-8">
           <li><a href="/" className="text-white">Home</a></li>
-          <li><a href="/" className="text-white">About</a></li>
-          <li><a href="/" className="text-white">Services</a></li>
-          <li><a href="/" className="text-white">Contact</a></li>
+          <li><a href="/about" className="text-white">About us</a></li>
+          <li><a href="/tour" className="text-white">Tours</a></li>
+          <li><a href="/contact" className="text-white">Contact us</a></li>
         </ul>
       </div>
       <div className="md:hidden">
@@ -27,9 +27,9 @@ export default function Navbar() {
     <div className="mobile-menu hidden md:hidden">
       <ul className="mt-4 space-y-4">
         <li><a href="/" className="block px-4 py-2 text-white bg-gray-900 rounded">Home</a></li>
-        <li><a href="/" className="block px-4 py-2 text-white bg-gray-900 rounded">About</a></li>
-        <li><a href="/" className="block px-4 py-2 text-white bg-gray-900 rounded">Services</a></li>
-        <li><a href="/" className="block px-4 py-2 text-white bg-gray-900 rounded">Contact</a></li>
+        <li><a href="/about" className="block px-4 py-2 text-white bg-gray-900 rounded">About us</a></li>
+        <li><a href="/tour" className="block px-4 py-2 text-white bg-gray-900 rounded">Tours</a></li>
+        <li><a href="/contact" className="block px-4 py-2 text-white bg-gray-900 rounded">Contact us</a></li>
       </ul>
     </div>
     
