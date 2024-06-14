@@ -13,6 +13,7 @@ import NotFound from './Routes/404.tsx';
 
 import Navbar from './Components/Navbar.tsx';
 import Footer from './Components/Footer.tsx';
+import BookingForm from './Routes/Booking/BookingForm.tsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,6 +24,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/tour" element={<Tour />} />
         <Route path="/tour/:id" element={<TourDetails />} />
+        <Route path="/tour/:id/book" element={<BookingForm />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
