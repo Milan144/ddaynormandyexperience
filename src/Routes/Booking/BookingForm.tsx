@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { ToursData } from "../../Components/ToursData.ts";
 import emailjs from "emailjs-com";
@@ -8,6 +8,18 @@ import {
 } from "react-notifications";
 
 export default function BookingForm() {
+  const [date, setDate] = useState<string>("");
+  const [number, setNumber] = useState<string>("");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    if (name === "date") {
+      setDate(value);
+    } else if (name === "number") {
+      setNumber(value);
+    }
+  };
+
   const { id } = useParams<{ id: string }>();
   if (id === undefined) {
     return <h1>404 page not found</h1>;
@@ -38,7 +50,7 @@ export default function BookingForm() {
       )
       .then(
         (result) => {
-          window.location.href = "/booking/success";
+          window.location.href = `/tour/${id}/book/success/${date}/${number}`;
         },
         (error) => {
           createErrorNotification()();
@@ -153,6 +165,7 @@ export default function BookingForm() {
                 type="date"
                 id="date"
                 name="date"
+                onChange={handleChange}
                 className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                 required
               />
@@ -168,6 +181,7 @@ export default function BookingForm() {
                 type="number"
                 id="number"
                 name="number"
+                onChange={handleChange}
                 className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                 placeholder="Number of people"
                 required
