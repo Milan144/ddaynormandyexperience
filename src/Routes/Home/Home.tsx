@@ -42,7 +42,7 @@ export default function Home() {
       />
       <div className="my-20">
         <div className="flex flex-col justify-center items-center">
-          <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="mt-3 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 pl-6 pr-6">
             <div className="flex items-start rounded-xl bg-white p-4 shadow-lg">
               <div className="flex h-12 w-12 items-center justify-center rounded-full border border-orange-100 bg-orange-50">
                 <svg
