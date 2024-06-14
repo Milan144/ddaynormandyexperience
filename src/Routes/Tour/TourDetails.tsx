@@ -26,7 +26,7 @@ export default function TourDetails() {
             className="absolute top-0 w-full h-full bg-center bg-cover"
             style={
               {
-                backgroundImage: `url('/img/honfleur.jpg')`,
+                backgroundImage: `url(${tours[id].image})`,
               } as React.CSSProperties
             }
           >
@@ -80,7 +80,7 @@ export default function TourDetails() {
                       <pre className="mb-4 text-lg leading-relaxed text-blueGray-700" style={{ whiteSpace: 'pre-wrap', wordWrap: 'break-word', maxWidth: '100%' }}>
                         {tours[id].itinerary}
                       </pre>
-                      <h1 className="mb-4 text-xl leading-relaxed font-bold text-orange-500">
+                      <h1 className="mb-4 text-sm leading-relaxed font-bold text-orange-500">
                         <p>
                           THE FRENCH LAW REQUIRES TO INDICATE THE PRICES ON THE
                           WEBSITE, BUT EACH TOUR IS ADAPTED ACCORDING TO YOUR

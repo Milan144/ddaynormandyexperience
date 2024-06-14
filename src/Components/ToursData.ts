@@ -1,5 +1,6 @@
 export const ToursData = [
   {
+    image: "/img/Utah-Beach-Jacques-Dillies-1-edited-2.jpg",
     title: "American DDAY Experience full day tour",
     subtitle:
       "Meet the Airborne division (paratroopers), the US infantry on their journey to Victory",
@@ -33,6 +34,7 @@ famous places and yet marked by the sacrifice of the heroes of 1944.`,
     rate: "950 euros, 1034.45 dollars",
   },
   {
+    image: "/img/1705917674416-edited-scaled.jpg",
     title: "American DDAY Experience day tour",
     subtitle: "Meet the Rangers, the infantry division in Omaha Beach",
     overview: `Follow me for the day in the steps of the American soldiers, in Pointe of Hoc, Omaha beach and the
@@ -57,6 +59,7 @@ famous places and yet marked by the sacrifice of the heroes of 1944.`,
     rate: "800 euros, 871.12 dollars",
   },
   {
+    image: "/img/tombs.jpg",
     title: "DDAY Experience Private tour 2 days",
     subtitle:
       "Meet the Airborne division (paratroopers), the US infantry on their journey to Victory and the others sectors of the DDAY",
@@ -84,6 +87,7 @@ American Cemetery
     rate: "1950 euros, 2150 dollars",
   },
   {
+    image: "/img/juno.jpg",
     title: "Canadian DDAY Expérience Day Tour",
     subtitle:
       "Join me to walk the steps of the Canadian soldiers, the brave, from June 1944 to August 1944 !",
@@ -108,6 +112,7 @@ If you have a specific itinerary in mind send me a message and I’ll customize 
     rate: "800 euros, 871.12 dollars",
   },
   {
+    image: "/img/englishdday.jpg",
     title: "British DDAY Experience Day Tour",
     subtitle:
       "Join me to walk the steps of the British soldiers, the brave, from June 1944 to August 1944 !",
@@ -132,6 +137,7 @@ not included.`,
     rate: "800 euros, 871.12 dollars",
   },
   {
+    image: "/img/montstmichel.jpg",
     title: "The marvel Mont Saint-Michel",
     subtitle:
       "Living a unique experience with your guide through the centuries",
@@ -158,6 +164,7 @@ you. During the tour I will use maps, pictures and you will discover some local 
     rate: "950 euros, 1050 dollars",
   },
   {
+    image: "/img/honfleur.jpg",
     title: "Full day tour of Honfleur, Deauville and the Pays d'Auge",
     subtitle: "Normandy between land and sea, Norman traditions",
     overview: `Normandy is a land of traditions between land and sea and offers a wide range of possible
@@ -181,6 +188,7 @@ Sea, land, Horses, Cider, Apple, art and history : ready for a ride into the rea
     rate: "950 euros, 1050 dollars",
   },
   {
+    image: "/img/etretat.jpg",
     title: "Full day tour of Etretat and Honfleur",
     subtitle: "Normandy between land and sea, Norman traditions",
     overview: `Normandy is a land of traditions between land and sea and offers a wide range of possible
@@ -207,6 +215,7 @@ Lupin.
     rate: "900 euros, 980 dollars",
   },
   {
+    image: "/img/cathedral.jpg",
     title:
       "Rouen, Honfleur, Bayeux, Caen,DDAY and local places : customized tours !",
     subtitle:
