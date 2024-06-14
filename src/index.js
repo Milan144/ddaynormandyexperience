@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
+import "react-notifications/lib/notifications.css";
 
 // Pages
 import Home from './Routes/Home/Home.tsx';
