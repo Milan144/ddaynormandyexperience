@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
 import "react-notifications/lib/notifications.css";
+import CookieConsent from "react-cookie-consent";
 
 // Pages
 import Home from './Routes/Home/Home.tsx';
@@ -27,12 +28,25 @@ root.render(
         <Route path="/tour" element={<Tour />} />
         <Route path="/tour/:id" element={<TourDetails />} />
         <Route path="/tour/:id/book" element={<BookingForm />} />
-        <Route path="/tour/:id/book/success/:date/:number" element={<BookingConfirm />} />
+        <Route
+          path="/tour/:id/book/success/:date/:number"
+          element={<BookingConfirm />}
+        />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
+      <CookieConsent
+        location="bottom"
+        buttonText="I understand"
+        cookieName="userConsent"
+        style={{ background: "#2B373B" }}
+        buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+        expires={150}
+      >
+        This website uses cookies to enhance the user experience.
+      </CookieConsent>
     </Router>
   </React.StrictMode>
 );
