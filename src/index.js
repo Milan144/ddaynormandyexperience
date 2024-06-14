@@ -17,6 +17,8 @@ import Navbar from './Components/Navbar.tsx';
 import Footer from './Components/Footer.tsx';
 import BookingForm from './Routes/Booking/BookingForm.tsx';
 import BookingConfirm from './Routes/Booking/BookingConfirm.tsx';
+import Privacy from './Routes/Privacy/Privacy.tsx';
+import Conditions from './Routes/TermsAndConditions/Conditions.tsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -34,6 +36,8 @@ root.render(
         />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path='/privacy-policy' element={<Privacy />} />
+        <Route path='/terms-and-conditions' element={<Conditions />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
